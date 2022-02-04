@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+body{
+    background-color:hsl(0, 0%, 95%);
+}
+#page-center{
+    margin: 6% auto;
+    width: 70%;
+}
+.bright-orange{
+    background-color: hsl(31, 77%, 52%);
+}
+.bright-orange-color{
+    color: hsl(31, 77%, 52%);
+}
+
+.dark-cyan{
+    background-color: hsl(184, 100%, 22%);
+}
+.dark-cyan-color{
+    color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan{
+    background-color: hsl(179, 100%, 13%);
+}
+.very-dark-cyan-color{
+    color: hsl(179, 100%, 13%);
+}
+
+.card{
+    float: left;
+    width: 33%;
+    height: 500px;
+}
+.border-around>div:first-child{
+    /* border:1px solid green; */
+    border-top-left-radius: 5px;
+    /* border-top-right-radius: 5px; */
+     border-bottom-left-radius: 5px;
+    /* border-bottom-right-radius: 5px; */
+     
+}
+.border-around>div:nth-child(3){
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.no-border{
+    border-radius: 0 !important;
+}
+.card-content{
+    padding: 40px;
+}
+.title{
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', 'Courier New', Courier, monospace;
+    color:hsl(0, 0%, 95%);
+    font-weight: 700;
+    
+}
+.description{
+    font-size: 15px;
+    font-family: 'Lexend Deca', 'Courier New', Courier, monospace;
+
+    color:hsla(0, 0%, 100%, 0.75);
+
+}
+.learn-more{
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    font-family: 'Lexend Deca', 'Courier New', Courier, monospace;
+    padding: 16px;   
+    width: 120px;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 15px;
+    margin-top: 100px;
+}
+.learn-more:hover{
+    cursor: pointer;
+    background-color:transparent ;
+    border: 1px solid white;
+    color: white;
+}
+@media only screen and (max-width:600px) 
+{
+    .card{
+        float: none;
+        width: 100%;
+    }
+    .card-content{
+        padding: 35px;
+    }
+    .no-top-left{
+        border-radius: 0px;
+    }
+    .no-top-right{
+        border-radius: 0px;
+    }
+    
+    #page-center{
+        margin: 4% auto;
+        width: 90%;
+    }
+    .border-around>div:first-child{
+        border-top-left-radius: 5px;
+         border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+         
+    }
+    .border-around>div:nth-child(3){
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    
+    
+}
