@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- Pull dynamic content from the data.json file -->
+  <div id="page-center">
+    
+    <div id="comments" class="comments">
+    </div>
+  </div>
+  <section id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+       <h3>Delete comment</h3> 
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want delete this comment? This will remove the comment and can't be undone.</p>
+      </div>
+      <div class="modal-footer">
+          <button class="modal-btn" id="cancelDelete">No,Cancel</button>
+          <button class="modal-btn" id="yesDelete">Yes,Delete</button>   
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
